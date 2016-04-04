@@ -1,38 +1,62 @@
 <html>
-  <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <title>CSV Analyzer</title>
-     <link href="global.css" rel="stylesheet" type="text/css">
 
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-     <script type="text/javascript" src="csv.js"></script>
-     <script type="text/javascript" src="main.js"></script>
-     <script type="text/html" id='fillTable'>
-       <table id="result" class="center">
-         <% _.each(items, function(name) { %>
-           <tr class="<%= name.rowClass %>">
-             <% _.each(name.value, function(cell) { %>
-               <td><%= cell %></td>
-             <% }); %>
-           </tr>
-         <% }); %>
-       </table>
-     </script>
-  </head>
-  <body>
-    <h1>Comma Separated Value Analyzer</h1>
-    <div>
-      <p><i> Go to the <a href="https://github.com/crguezl/csv">repo</a>.</i></p>
-      <i>Write a CSV string. Click the table button. The program outputs a table with the specified data.</i>
-    </div>
-    <table>
-      <tr>
-        <th>CSV string:</th> <!-- autofocus attribute is HTML5 -->
-        <td><textarea autofocus cols = "80" rows = "5" id="original"></textarea></td> 
-      </tr>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Analizador CSV</title>
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/global.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/csv.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/html" id='fillTable'>
+    <table id="result">
+      <% _.each(items, function(name) { %>
+        <tr class="<%= name.rowClass %>">
+          <% _.each(name.value, function(cell) { %>
+            <td><%= cell %></td>
+            <% }); %>
+        </tr>
+        <% }); %>
     </table>
-    <button type="button">table:</button><br>
+  </script>
+</head>
+
+<body>
+  <header>
+    <div id=menu>
+      <h1>Analizador CSV</h1>
+      <nav>
+        <ul>
+          <li><a href="http://alu0100699968.github.io/" target="_blank"><i class="fa fa-user"></i> Sergio Rodríguez</a></li>
+          <li><a href="http://alu0100696455.github.io/" target="_blank"><i class="fa fa-user"></i> Jonathan Expósito</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="separador"></div>
+  <div class=pagina>
+    <p>Escriba una cadena de texto en formato Comma Separated Values y pulse el botón para generar una tabla con dichos datos.</p>
+    <div class="separador"></div>
+    <textarea autofocus cols="80" rows="5" id="original"></textarea>
+    <br>
+    <button type="button">Generar Tabla</button>
+    <br>
+    <div class="separador"></div>
     <span class="output" id="finaltable"></span>
-  </body>
+  </div>
+
+  <footer>
+    <p>Enlaces de interés:</p>
+    <ul id=listamenu>
+      <li><a href="tests/" target="_blank">Tests del proyecto</a></li>
+      <li><a href="https://github.com/alu0100699968/karma-y-travis-sergio-jonathan/" target="_blank">Repositorio de la práctica</a></li>
+      <li><a href="https://github.com/alu0100699968" target="_blank">GitHub Sergio Rodríguez</a></li>
+      <li><a href="https://github.com/alu0100696455" target="_blank">GitHub Jonathan Expósito</a></li>
+    </ul>
+  </footer>
+</body>
+
 </html>
