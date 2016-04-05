@@ -5,7 +5,13 @@
   var regexp = /"((?:[^"\\]|\\.)*)"|([^,\s]+)|,\s*(?=,|$)|^\s*,/g
   exports.calculate = function(original) {
     var lines = original.split(/\n+\s*/);
-    var commonLength = lines[0].match(regexp).length;
+
+    for (var i in lines)
+      if (lines[i].match(regexp)) {
+        var commonLength = lines[i].match(regexp).length;
+        break;
+      }
+
     var r = [];
     var removeQuotes = function(field) {
       var removecomma = field.replace(/,\s*$/, '');
@@ -22,19 +28,23 @@
       var error = false;
 
       // skip empty lines and comments
-      if (temp.match(/(^\s*$)|(^#.*)/)) continue; 
+      if (temp.match(/(^\s*$)|(^#.*)/)) continue;
       if (m) {
         result = m.map(removeQuotes);
         error = (commonLength != m.length);
-        var rowclass = error? 'error' : '';
-        r.push({ value: result, rowClass: rowclass });
-      }
-      else {
+        var rowclass = error ? 'error' : '';
+        r.push({
+          value: result,
+          rowClass: rowclass
+        });
+      } else {
         var errmsg = 'La fila "' + temp + '" no es un valor de CSV permitido.';
-        r.push({value: errmsg.split("").splice(commonLength), rowClass: 'error'});
+        r.push({
+          value: errmsg.split("").splice(commonLength),
+          rowClass: 'error'
+        });
       }
     }
     return r;
   };
 })(this);
-
