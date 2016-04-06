@@ -43,5 +43,9 @@
   },
   "directories": {
     "test": "tests"
+  },
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
   }
 }
