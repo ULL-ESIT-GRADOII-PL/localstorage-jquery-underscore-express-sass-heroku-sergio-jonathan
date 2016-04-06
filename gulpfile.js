@@ -17,17 +17,11 @@ gulp.task('minify', function() {
     .pipe(uglify({
       mangle: false
     }))
-    .pipe(rename(function(path) {
-      path.basename += ".min";
-    }))
     .pipe(gulp.dest('minified/js'));
 
   gulp.src(['!assets/tests/*.min.js', 'assets/tests/*.js'])
     .pipe(uglify({
       mangle: false
-    }))
-    .pipe(rename(function(path) {
-      path.basename += ".min";
     }))
     .pipe(gulp.dest('minified/tests'));
 
@@ -44,7 +38,8 @@ gulp.task('minify', function() {
 
   gulp.src(['!assets/css/*.min.css', 'assets/css/*.css'])
     .pipe(minifyCSS({
-      keepBreaks: true
+      keepBreaks: true,
+      processImport: false
     }))
     .pipe(rename(function(path) {
       path.basename += ".min"
@@ -55,9 +50,6 @@ gulp.task('minify', function() {
     .pipe(minifyCSS({
       keepBreaks: true,
       processImport: false
-    }))
-    .pipe(rename(function(path) {
-      path.basename += ".min"
     }))
     .pipe(gulp.dest('minified/tests'))
 
