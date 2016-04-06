@@ -15,7 +15,7 @@ describe("Distancia", function() {
       var original = 'a,b,c,"d,e,f"\nx,y,z';
       var result = calculate(original);
       expect(result).to.be.instanceof(Array);
-      expect(result[0].rowClass).to.equal("");
+      expect(result[0].rowClass).to.equal("first");
       expect(result[1].rowClass).to.equal("error");
     });
   });
