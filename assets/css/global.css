@@ -83,6 +83,10 @@ nav > ul > li {
   padding: 5px;
 }
 
+.output #result .error {
+  background-color: rgba(164, 17, 29, 0.8);
+}
+
 table, th, td {
   border: 1px solid white;
 }
@@ -113,6 +117,9 @@ footer a:hover {
   #menu h1 {
     font-size: x-large;
   }
+  #original {
+    width: 450px;
+  }
 }
 
 @media screen and (max-width: 525px) {
@@ -122,7 +129,7 @@ footer a:hover {
   #menu h1 {
     font-size: large;
   }
-  input, #converted {
+  #original {
     width: 250px;
   }
 }
