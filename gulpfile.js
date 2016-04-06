@@ -3,7 +3,7 @@ var gulp = require('gulp'),
   rename = require('gulp-rename'),
   del = require('del'),
   minifyHTML = require('gulp-minify-html'),
-  minifyCSS = require('gulp-minify-css'),
+  minifyCSS = require('gulp-clean-css'),
   karma = require('karma').server,
   gulp = require('gulp'),
   ghPages = require('gulp-gh-pages'),
@@ -31,8 +31,11 @@ gulp.task('minify', function() {
     }))
     .pipe(gulp.dest('minified/tests'));
 
-  gulp.src('assets/index.html')
+  gulp.src('assets/indice.html')
     .pipe(minifyHTML())
+    .pipe(rename(function(path) {
+      path.basename = "index";
+    }))
     .pipe(gulp.dest('minified'))
 
   gulp.src('assets/tests/index.html')
