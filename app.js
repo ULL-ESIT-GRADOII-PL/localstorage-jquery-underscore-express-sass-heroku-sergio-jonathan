@@ -2,6 +2,8 @@ var express = require('express');
 var app = express();
 
 app.set('view engine', 'ejs');
+require('ejs').delimiter = '$';
+
 app.set('port', (process.env.PORT || 1624));
 
 app.use(express.static(__dirname + '/assets'));

@@ -53,7 +53,8 @@ gulp.task('minify', function() {
 
   gulp.src(['!assets/tests/*.min.css', 'assets/tests/*.css'])
     .pipe(minifyCSS({
-      keepBreaks: true
+      keepBreaks: true,
+      processImport: false
     }))
     .pipe(rename(function(path) {
       path.basename += ".min"
