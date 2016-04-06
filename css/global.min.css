@@ -19,6 +19,7 @@ nav>ul,nav>ul>li{display:inline}
 .output #result{width:auto}
 .output #result td{padding:5px}
 .output #result .error{background-color:rgba(164,17,29,.8)}
+.output #result .first{background-color:#fff;color:#000;font-weight:700}
 table,td,th{border:1px solid #fff}
 footer{width:100%;text-align:left;text-indent:2%;position:absolute;bottom:0;left:0}
 footer a{color:#fff;font-style:italic}
