@@ -1,12 +1,22 @@
-#ETSII ULL Grado de Informatica 
-#Práctica:
+# ULL ESIT Grado de Ingeniería Informática
 
-#Comma Separated Values
+## Práctica: Conversor en JavaScript de medidas utilizando OOP [![Build Status](https://travis-ci.org/alu0100696455/localstorage-jquery-underscore-express-sass-heroku-sergio-jonathan.svg?branch=master)](https://travis-ci.org/alu0100696455/localstorage-jquery-underscore-express-sass-heroku-sergio-jonathan)
 
-For more information look at:
+Este repositorio aloja la práctica de conversión de tipos, realizada con html, css y javascript, usando POO y haciendo uso de la herencia en javascript.
 
-* La sección *Práctica: Comma Separated Values. CSV* de los [apuntes](http://crguezl.github.io/pl-html/node11.html)
-* La [descripción de la práctica](https://casianorodriguezleon.gitbooks.io/pl1516/content/practicas/csv.html)
-* See it working at [CSV en GitHub Pages](http://crguezl.github.io/csv/)
-* See also [CSV](http://en.wikipedia.org/wiki/Comma-separated_values) at Wikipedia.
+### Despliegue en github.io
 
+* [Página web del proyecto](http://ull-esit-gradoii-pl.github.io/localstorage-jquery-underscore-express-sass-heroku-sergio-jonathan/)
+* [Repositorio en el que trabajamos](https://github.com/alu0100696455/localstorage-jquery-underscore-express-sass-heroku-sergio-jonathan/)
+* [Enlace a los tests del proyecto](http://ull-esit-gradoii-pl.github.io/localstorage-jquery-underscore-express-sass-heroku-sergio-jonathan/tests/)
+* [Despliegue en Heroku](http://csv-analyzer.herokuapp.com/)
+
+### Campus Virtual
+
+* [Procesadores de Lenguajes](https://campusvirtual.ull.es/1516/course/view.php?id=178)
+* [Descripción de la práctica (Gitbooks)](https://casianorodriguezleon.gitbooks.io/pl1516/content/practicas/csv.html)
+
+### Autores
+
+* [Jonathan Expósito Martín](https://alu0100696455.github.io)
+* [Sergio Rodríguez Martín](https://alu0100699968.github.io)
