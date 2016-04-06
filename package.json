@@ -5,6 +5,7 @@
   "main": "assets/js/csv.js",
   "scripts": {
     "test": "gulp tests",
+    "start": "node app.js",
     "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o tests/chai.js",
     "mocha": "curl https://raw.githubusercontent.com/mochajs/mocha/master/mocha.js -o tests/mocha.js && curl https://raw.githubusercontent.com/mochajs/mocha/master/mocha.css -o tests/mocha.css"
   },
