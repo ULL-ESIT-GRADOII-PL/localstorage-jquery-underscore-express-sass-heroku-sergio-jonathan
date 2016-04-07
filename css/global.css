@@ -1,7 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,700);
 footer ul,nav>ul,nav>ul>li{list-style-type:none}
-@font-face{font-family:Montserrat;font-style:normal;font-weight:400;src:local('Montserrat-Regular'),url(https://fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYC3USBnSvpkopQaUR-2r7iU.ttf) format('truetype')}
-@font-face{font-family:Raleway;font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(https://fonts.gstatic.com/s/raleway/v10/bIcY3_3JNqUVRAQQRNVteQ.ttf) format('truetype')}
-@font-face{font-family:Raleway;font-style:normal;font-weight:700;src:local('Raleway Bold'),local('Raleway-Bold'),url(https://fonts.gstatic.com/s/raleway/v10/JbtMzqLaYbbbCL9X6EvaIy3USBnSvpkopQaUR-2r7iU.ttf) format('truetype')}
 body{background:#232526;background:-webkit-linear-gradient(right,#232526,#414345);background:linear-gradient(to left,#232526,#414345);color:#fff;font-family:Raleway,sans-serif}
 header{background:url(../images/header.jpg) center no-repeat;text-align:left;width:100%;height:85px}
 header a{color:#fff;text-decoration:none;padding-right:5%}
