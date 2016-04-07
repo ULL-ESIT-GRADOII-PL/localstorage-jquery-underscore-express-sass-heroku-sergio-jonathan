@@ -87,6 +87,12 @@ nav > ul > li {
   background-color: rgba(164, 17, 29, 0.8);
 }
 
+.output #result .first {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
 table, th, td {
   border: 1px solid white;
 }
