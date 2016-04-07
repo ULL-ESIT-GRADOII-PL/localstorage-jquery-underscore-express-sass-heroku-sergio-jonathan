@@ -1,8 +1,9 @@
 # ULL ESIT Grado de Ingeniería Informática
 
-## Práctica: Conversor en JavaScript de medidas utilizando OOP [![Build Status](https://travis-ci.org/alu0100696455/localstorage-jquery-underscore-express-sass-heroku-sergio-jonathan.svg?branch=master)](https://travis-ci.org/alu0100696455/localstorage-jquery-underscore-express-sass-heroku-sergio-jonathan)
+## Práctica: Analizador de cadenas de texto en CSV [![Build Status](https://travis-ci.org/alu0100696455/localstorage-jquery-underscore-express-sass-heroku-sergio-jonathan.svg?branch=master)](https://travis-ci.org/alu0100696455/localstorage-jquery-underscore-express-sass-heroku-sergio-jonathan)
 
-Este repositorio aloja la práctica de conversión de tipos, realizada con html, css y javascript, usando POO y haciendo uso de la herencia en javascript.
+Este repositorio aloja la práctica del analizador de cadenas de texto en CSV, que se encuentra
+desplegada en Heroku y tiene soporte de Karma, Gulp y Travis.
 
 ### Despliegue en github.io
 

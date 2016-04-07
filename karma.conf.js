@@ -63,7 +63,7 @@ module.exports = function(config) {
       }
     },
 
-    browserNoActivityTimeout: 30000,
+    browserNoActivityTimeout: 60000,
 
 
     // Continuous Integration mode

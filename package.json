@@ -9,6 +9,9 @@
     "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o tests/chai.js",
     "mocha": "curl https://raw.githubusercontent.com/mochajs/mocha/master/mocha.js -o tests/mocha.js && curl https://raw.githubusercontent.com/mochajs/mocha/master/mocha.css -o tests/mocha.css"
   },
+  "engines": {
+    "node": ">=0.12 <=5"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ULL-ESIT-GRADOII-PL/localstorage-jquery-underscore-express-sass-heroku-sergio-jonathan.git"
